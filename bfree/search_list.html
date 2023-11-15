@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <title>제품검색 - B free</title>
+  <meta name="description" content="모두를 위한 쇼핑몰 비프리">
+  <meta name="keywords" content="bfree, 시각장애인을 위한 쇼핑몰, 모두를 위한 쇼핑몰" />
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bfree.com/">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div id="wrapper" class="search-view">
+  <div class="container">
+    <header>
+      <div class="inner">
+        <button type="button" class="back" onclick="history.back()">
+          <span class="sr-only">뒤로</span>
+        </button>
+      </div>
+    </header>
+    <main class="contents-wrap">
+      <form>
+        <div class="voice-ipt-wrap">
+          <div class="ipt-wrap">
+            <input type="search" class="ipt search" value="미니테이블">
+            <button type="submit" class="ipt-btn">
+              <span class="sr-only">검색</span>
+            </button>
+          </div>
+          <button type="button" class="voice-btn fn-popup-open" data-popup-id="#popupVoice" aria-haspopup="dialog" aria-controls="popupVoice">
+            <div class="icon"></div>
+            <span class="sr-only">음성검색</span>
+          </button>
+        </div>
+      </form>
+      <div class="search-view-wrap">
+        <div class="inner">
+          <div class="tab-wrap sorting">
+            <ul class="tab-list">
+              <li class="active"><a href="#">누적 판매순</a></li>
+              <li><a href="#">높은 별점순</a></li>
+            </ul>
+          </div>
+          <ul class="product-list">
+            <li>
+              <a href="./product.html">
+                <div class="img-box">
+                  <img src="./img/product_img01.jpg" alt="[라움에스알] 베니스 라탄 침대 소파 사이드 테이블">
+                </div>
+                <div class="txt-wrap">
+                  <h4 class="tit">[라움에스알] 베니스 라탄 침대 소파 사이드 테이블</h4>
+                  <div class="flag-wrap">
+                    <span class="flag discount">50% 할인</span>
+                    <span class="flag delivery">무료배송</span>
+                  </div>
+                  <div class="price">93,600원</div>
+                  <div class="rating">별점 4.6점(999명 평가)</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./product.html">
+                <div class="img-box">
+                  <img src="./img/product_img02.jpg" alt="[플랫포인트] 폼 미니멀 사이드 테이블">
+                </div>
+                <div class="txt-wrap">
+                  <h4 class="tit">[플랫포인트] 폼 미니멀 사이드 테이블</h4>
+                  <div class="flag-wrap">
+                    <span class="flag delivery">무료배송</span>
+                  </div>
+                  <div class="price">158,000원</div>
+                  <div class="rating">별점 4.6점(999명 평가)</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./product.html">
+                <div class="img-box">
+                  <img src="./img/product_img03.jpg" alt="[도잠] 올리다 모듈러 티테이블">
+                </div>
+                <div class="txt-wrap">
+                  <h4 class="tit">[도잠] 올리다 모듈러 티테이블</h4>
+                  <div class="flag-wrap">
+                    <span class="flag discount">15% 할인</span>
+                    <span class="flag delivery">무료배송</span>
+                  </div>
+                  <div class="price">125,000원</div>
+                  <div class="rating">별점 4.6점(999명 평가)</div>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <a href="#" onclick="return false;" class="to-chatbot fn-popup-open" data-popup-id="#popupChatbot" aria-haspopup="dialog" aria-controls="popupChatbot">
+    <span class="sr-only">대화하며 쇼핑하기</span>
+  </a>
+
+  <div id="popup">
+    <!-- .popup-wrap -->
+    <div class="popup-wrap option-full" id="popupVoice" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="popupVoiceTitle"><!-- @set: option-full -->
+      <!-- .popup-inner -->
+      <div class="popup-inner voice" tabindex="0" data-focus-on="true">
+        <!-- <div class="popup-head">
+          <h2 class="popup-title" id="popupVoiceTitle"><span>팝업 타이틀</span></h2>
+        </div> -->
+        <!-- .popup-content -->
+        <div class="popup-content contents-wrap">
+          <!-- .section -->
+          <section class="section">
+            <div class="voice-tit">
+              <strong>듣고 있어요</strong>
+              <p>찾으시는 상품을 말해주세요</p>
+            </div>
+            <div class="voice-btn-wrap">
+              <button type="button" class="voice-btn">
+                <div class="icon"></div>
+                <span class="sr-only">음성검색</span>
+              </button>
+              <div class="voice-bg round1"></div>
+              <div class="voice-bg round2"></div>
+              <div class="voice-bg round3"></div>
+            </div>
+          </section>
+          <!--// .section -->
+        </div>
+        <!--// .popup-content -->
+        <!-- .popup-foot -->
+        <!-- <div class="popup-foot">
+          <div class="btn-group">
+            <button type="button" class="btn"><span>초기화</span></button>
+            <button type="button" class="btn"><span>검색</span></button>
+          </div>
+        </div> -->
+        <!--// .popup-foot -->
+        <!-- .btn-popup-close -->
+        <button type="button" class="btn-popup-close fn-popup-close" data-popup-id="#popupVoice">
+          <span class="sr-only">팝업 닫기</span>
+        </button>
+        <!--// .btn-popup-close -->
+      </div>
+      <!--// .popup-inner -->
+    </div>
+    <!--// .popup-wrap -->
+
+    <!-- .popup-wrap -->
+    <div class="popup-wrap option-full" id="popupChatbot" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="popupChatbotTitle"><!-- @set: option-full -->
+      <!-- .popup-inner -->
+      <div class="popup-inner chatbot" tabindex="0" data-focus-on="true">
+        <div class="popup-head">
+          <h2 class="popup-title" id="popupChatbotTitle"><span>대화하며 쇼핑하기</span></h2>
+        </div>
+        <!-- .popup-content -->
+        <div class="popup-content contents-wrap">
+          <!-- .section -->
+          <section class="section inner">
+            <div class="chat-contents">
+              <div class="date"><span>2023.10.10</span></div>
+              <div class="chat-wrap left">
+                <div class="profile">프리봇</div>
+                <div class="ch-start"><span>김프리</span>님,<br />
+                  어떤 상품을 찾아드릴까요?</div>
+                <div class="chat-box"><p>안녕하세요. 프리봇입니다 😊</p></div>
+                <div class="chat-box"><p>오늘은 어떤 상품을 찾고 계세요? <br />무엇이든 물어봐 주세요!</p></div>
+                <div class="time">11:30</div>
+              </div>
+              <div class="chat-wrap right">
+                <div class="chat-box right"><p>회사에서 사용할 대용량 텀블러 추천해줘</p></div>
+                <div class="time">11:30</div>
+              </div>
+              <div class="chat-wrap left">
+                <div class="profile">프리봇</div>
+                <div class="chat-box"><p>다음 3개의 상품은 어떠세요?</p></div>
+                <ul class="product-list">
+                  <li>
+                    <a href="./product.html">
+                      <div class="img-box"></div>
+                      <div class="txt-wrap">
+                        <h4 class="tit">[써모스] 데일리 원터치 텀블러 720ml</h4>
+                        <div class="price">27,500원</div>
+                        <div class="rating">별점 4.6점</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./product.html">
+                      <div class="img-box"></div>
+                      <div class="txt-wrap">
+                        <h4 class="tit">[쓰임] 스포티 리유저블 텀블러 500ml</h4>
+                        <div class="price">33,900원</div>
+                        <div class="rating">별점 4.6점</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./product.html">
+                      <div class="img-box"></div>
+                      <div class="txt-wrap">
+                        <h4 class="tit">[스탠리] 클래식 아이스플로우 플립 텀블러</h4>
+                        <div class="price">6,000원</div>
+                        <div class="rating">별점 4.6점</div>
+                      </div>
+                    </a>
+                  </li>
+      
+                </ul>
+                <div class="suggest-wrap">
+                  <span class="sr-only">찾는 상품이 없으신가요?</span>
+                  <a href="#" class="suggest">다른 상품 더 추천해줘</a>
+                  <a href="#" class="suggest">더 저렴한 상품으로 추천해줘</a>
+                  <a href="#" class="suggest">마음에 드는 추천이야</a>
+                  <a href="#" class="suggest">잘못된 추천이야</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--// .section -->
+        </div>
+        <!--// .popup-content -->
+        <!-- .popup-foot -->
+        <div class="popup-foot">
+          <form>
+            <div class="voice-ipt-wrap btn-group">
+              <div class="ipt-wrap">
+                <input type="text" class="ipt" placeholder="메시지를 입력해 주세요">
+                <button type="submit" class="ipt-btn send">
+                  <span class="sr-only">보내기</span>
+                </button>
+              </div>
+              <button type="button" class="voice-btn fn-popup-open" data-popup-id="#popupVoice" aria-haspopup="dialog" aria-controls="popupVoice">
+                <div class="icon"></div>
+                <span class="sr-only">음성검색</span>
+              </button>
+            </div>
+          </form>
+        </div>
+        <!--// .popup-foot -->
+        <!-- .btn-popup-close -->
+        <button type="button" class="btn-popup-close fn-popup-close" data-popup-id="#popupChatbot">
+          <span class="sr-only">팝업 닫기</span>
+        </button>
+        <!--// .btn-popup-close -->
+      </div>
+      <!--// .popup-inner -->
+    </div>
+    <!--// .popup-wrap -->
+  </div>
+
+</div>
+<script src="./js/common.js"></script>
+</body>
+</html>
