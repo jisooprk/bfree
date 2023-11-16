@@ -15,6 +15,7 @@
   <div class="container">
     <header>
       <div class="inner">
+        <h1 class="sr-only">제품 검색</h1>
         <button type="button" class="back" onclick="history.back()">
           <span class="sr-only">뒤로</span>
         </button>
@@ -30,7 +31,7 @@
             </button>
           </div>
           <button type="button" class="voice-btn fn-popup-open" data-popup-id="#popupVoice" aria-haspopup="dialog" aria-controls="popupVoice">
-            <div class="icon"></div>
+            <span class="icon"></span>
             <span class="sr-only">음성검색</span>
           </button>
         </div>
@@ -108,20 +109,18 @@
     <div class="popup-wrap option-full" id="popupVoice" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="popupVoiceTitle"><!-- @set: option-full -->
       <!-- .popup-inner -->
       <div class="popup-inner voice" tabindex="0" data-focus-on="true">
-        <!-- <div class="popup-head">
-          <h2 class="popup-title" id="popupVoiceTitle"><span>팝업 타이틀</span></h2>
-        </div> -->
         <!-- .popup-content -->
         <div class="popup-content contents-wrap">
           <!-- .section -->
           <section class="section">
+            <h2 class="sr-only" id="popupVoiceTitle">음성 검색</h2>
             <div class="voice-tit">
               <strong>듣고 있어요</strong>
               <p>찾으시는 상품을 말해주세요</p>
             </div>
             <div class="voice-btn-wrap">
               <button type="button" class="voice-btn">
-                <div class="icon"></div>
+                <span class="icon"></span>
                 <span class="sr-only">음성검색</span>
               </button>
               <div class="voice-bg round1"></div>
@@ -132,14 +131,6 @@
           <!--// .section -->
         </div>
         <!--// .popup-content -->
-        <!-- .popup-foot -->
-        <!-- <div class="popup-foot">
-          <div class="btn-group">
-            <button type="button" class="btn"><span>초기화</span></button>
-            <button type="button" class="btn"><span>검색</span></button>
-          </div>
-        </div> -->
-        <!--// .popup-foot -->
         <!-- .btn-popup-close -->
         <button type="button" class="btn-popup-close fn-popup-close" data-popup-id="#popupVoice">
           <span class="sr-only">팝업 닫기</span>
@@ -181,7 +172,9 @@
                 <ul class="product-list">
                   <li>
                     <a href="./product.html">
-                      <div class="img-box"></div>
+                      <div class="img-box">
+                        <img src="./img/chat_product_01.jpg" alt="[써모스] 데일리 원터치 텀블러 720ml">
+                      </div>
                       <div class="txt-wrap">
                         <h4 class="tit">[써모스] 데일리 원터치 텀블러 720ml</h4>
                         <div class="price">27,500원</div>
@@ -191,7 +184,9 @@
                   </li>
                   <li>
                     <a href="./product.html">
-                      <div class="img-box"></div>
+                      <div class="img-box">
+                        <img src="./img/chat_product_02.jpg" alt="[쓰임] 스포티 리유저블 텀블러 500ml">
+                      </div>
                       <div class="txt-wrap">
                         <h4 class="tit">[쓰임] 스포티 리유저블 텀블러 500ml</h4>
                         <div class="price">33,900원</div>
@@ -201,7 +196,9 @@
                   </li>
                   <li>
                     <a href="./product.html">
-                      <div class="img-box"></div>
+                      <div class="img-box">
+                        <img src="./img/chat_product_03.jpg" alt="[스탠리] 클래식 아이스플로우 플립 텀블러">
+                      </div>
                       <div class="txt-wrap">
                         <h4 class="tit">[스탠리] 클래식 아이스플로우 플립 텀블러</h4>
                         <div class="price">6,000원</div>
@@ -235,7 +232,7 @@
                 </button>
               </div>
               <button type="button" class="voice-btn fn-popup-open" data-popup-id="#popupVoice" aria-haspopup="dialog" aria-controls="popupVoice">
-                <div class="icon"></div>
+                <span class="icon"></span>
                 <span class="sr-only">음성검색</span>
               </button>
             </div>

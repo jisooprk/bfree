@@ -32,7 +32,7 @@
               </button>
             </div>
             <button type="button" class="voice-btn fn-popup-open" id="sampleA" data-popup-id="#popupVoice" aria-haspopup="dialog" aria-controls="popupVoice">
-              <div class="icon"></div>
+              <span class="icon"></span>
               <span class="sr-only">음성검색</span>
             </button>
           </div>
@@ -46,20 +46,18 @@
     <div class="popup-wrap option-full" id="popupVoice" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="popupVoiceTitle"><!-- @set: option-full -->
       <!-- .popup-inner -->
       <div class="popup-inner voice" tabindex="0" data-focus-on="true">
-        <!-- <div class="popup-head">
-          <h2 class="popup-title" id="popupVoiceTitle"><span>팝업 타이틀</span></h2>
-        </div> -->
         <!-- .popup-content -->
         <div class="popup-content contents-wrap">
           <!-- .section -->
           <section class="section">
+            <h2 class="sr-only" id="popupVoiceTitle">음성 검색</h2>
             <div class="voice-tit">
               <strong>듣고 있어요</strong>
               <p>찾으시는 상품을 말해주세요</p>
             </div>
             <div class="voice-btn-wrap">
               <button type="button" class="voice-btn">
-                <div class="icon"></div>
+                <span class="icon"></span>
                 <span class="sr-only">음성검색</span>
               </button>
               <div class="voice-bg round1"></div>
@@ -70,14 +68,6 @@
           <!--// .section -->
         </div>
         <!--// .popup-content -->
-        <!-- .popup-foot -->
-        <!-- <div class="popup-foot">
-          <div class="btn-group">
-            <button type="button" class="btn"><span>초기화</span></button>
-            <button type="button" class="btn"><span>검색</span></button>
-          </div>
-        </div> -->
-        <!--// .popup-foot -->
         <!-- .btn-popup-close -->
         <button type="button" class="btn-popup-close fn-popup-close" data-popup-id="#popupVoice">
           <span class="sr-only">팝업 닫기</span>

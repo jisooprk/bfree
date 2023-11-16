@@ -72,6 +72,7 @@ div>img, a>img, li>img {
   margin: 0 auto;
 }
 #wrapper .container {
+  position: relative;
   height: 100%;
   overflow: auto;
 }
@@ -643,7 +644,7 @@ footer .footer-logo {
 #wrapper.search-view .contents-wrap {
   padding-top: 0;
 }
-#wrapper.search-view .voice-ipt-wrap {
+#wrapper.search-view .contents-wrap .voice-ipt-wrap {
   padding: 100px 20px 24px;
   background: #fff;
 }
@@ -663,7 +664,6 @@ footer .footer-logo {
   padding-top: 24px;
 }
 .product-list li {
-  padding: 24px 16px;
   border-radius: 20px;
   background: #FFF;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08);
@@ -673,6 +673,7 @@ footer .footer-logo {
   justify-content: space-between;
   width: 100%;
   height: 100%;
+  padding: 24px 16px;
   color: #000;
 }
 .product-list li + li {
@@ -903,13 +904,13 @@ footer .footer-logo {
   font-weight: 500;
 }
 
-.detail-percent {
+.keyword-wrap {
   padding: 40px 8.33% 64px;
 }
-.detail-percent li + li {
+.keyword-wrap li + li {
   margin-top: 20px;
 }
-.detail-percent .tit {
+.keyword-wrap .tit {
   margin-bottom: 8px;
   font-size: 20px;
 }
@@ -918,14 +919,14 @@ footer .footer-logo {
   justify-content: space-between;
   align-items: center;
 }
-.detail-percent .bar {
+.keyword-wrap .bar {
   position: relative;
   width: 76%;
   height: 8px;
   border-radius: 4px;
   background: #EFEFEF;
 }
-.detail-percent .bar::after {
+.keyword-wrap .bar::after {
   content: '';
   position: absolute;
   left: 0;
@@ -936,15 +937,15 @@ footer .footer-logo {
   border-radius: 4px;
   background: linear-gradient(117deg, #638DFF 33.3%, #1E4BF4 100%);
 }
-.detail-percent li:nth-child(2) .bar::after {
+.keyword-wrap li:nth-child(2) .bar::after {
   width: 68%;
   background: linear-gradient(117deg, #7BE1A4 33.28%, #3EC574 100%);
 }
-.detail-percent li:nth-child(3) .bar::after {
+.keyword-wrap li:nth-child(3) .bar::after {
   width: 28%;
   background: linear-gradient(116deg, #FF6363 32.91%, #BC2C2C 100%);
 }
-.detail-percent em {
+.keyword-wrap em {
   padding-right: 6px;
   font-size: 18px;
   font-style: normal;
@@ -984,8 +985,10 @@ footer .footer-logo {
   line-height: 1.5;
 }
 .rev-list>li .date {
+  display: block;
   margin-top: 8px;
   font-size: 16px;
+  color: #616161;
 }
 
 .more-info-wrap {
